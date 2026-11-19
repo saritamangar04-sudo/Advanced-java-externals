@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal - Registration</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="auth-wrapper" style="max-width: 580px;">
+        <div class="card">
+            <div class="card-header">
+                <div class="brand-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                    </svg>
+                </div>
+                <h2>Student Registration</h2>
+                <p>Fill out the profile details to enroll into the student system.</p>
+            </div>
+
+            <form id="registerForm" action="Register.jsp" method="post">
+                <div class="form-grid">
+                    <div class="form-group col-span-2">
+                        <label for="name">Full Name *</label>
+                        <div class="input-container">
+                            <input type="text" id="name" name="name" class="no-icon-input" placeholder="e.g. Rickden Moktan" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="enrollment_no">Enrollment Number *</label>
+                        <div class="input-container">
+                            <input type="text" id="enrollment_no" name="enrollment_no" class="no-icon-input" placeholder="e.g. A91005224044" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="batch">Batch / Academic Year *</label>
+                        <div class="input-container">
+                            <input type="text" id="batch" name="batch" class="no-icon-input" placeholder="e.g. 2024-2028" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="official-email">Official Email *</label>
+                        <div class="input-container">
+                            <input type="email" id="official-email" name="official-email" class="no-icon-input" placeholder="student@college.edu" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mobile_number">Mobile Number *</label>
+                        <div class="input-container">
+                            <input type="tel" id="mobile_number" name="mobile_number" class="no-icon-input" placeholder="9876543210" required pattern="[0-9]{10}">
+                        </div>
+                    </div>
+
+                    <div class="form-group col-span-2">
+                        <label for="dob">Date of Birth *</label>
+                        <div class="input-container">
+                            <input type="date" id="dob" name="dob" class="no-icon-input" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-span-2">
+                        <label for="address">Permanent Address *</label>
+                        <div class="input-container">
+                            <textarea id="address" name="address" class="no-icon-input" placeholder="Enter street and locality..." required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="state">State *</label>
+                        <div class="input-container">
+                            <input type="text" id="state" name="state" class="no-icon-input" placeholder="e.g. West Bengal" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="city">City *</label>
+                        <div class="input-container">
+                            <input type="text" id="city" name="city" class="no-icon-input" placeholder="e.g. Darjeeling" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 24px;">
+                    <button type="submit" class="btn-primary" id="registerSubmitBtn">
+                        <span>Complete Registration</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 11 12 14 22 4"></polyline>
+                            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="footer-nav">
+                    Already registered? <a href="login.html">Sign In here</a>
+                    &nbsp;&bull;&nbsp;
+                    <a href="viewStudent.jsp">View Directory</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<taglib>
+    <tlib-version>1.0</tlib-version>
+    <jsp-version>1.2</jsp-version>
+    <short-name>simple</short-name>
+    <tag>
+        <name>tags</name>
+        <tag-class>mytag.MyTagHandler</tag-class>
+        <attribute>
+            <name>action</name>
+        </attribute>
+        <attribute>
+            <name>page</name>
+        </attribute>
+    </tag>
+</taglib>
